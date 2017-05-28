@@ -3,9 +3,9 @@ const loadAllItems = require('./loadAllItems.js');
 module.exports = function main(inputs) {
 	var numOfItems=[0,0,0,0,0,0];
 	var sum=0;
-	for(let i=0;i<input.length;i++){
+	for(let i=0;i<inputs.length;i++){
 		for(let j=0;j<loadAllItems.length;j++){
-			if(loadAllItems[j][barcode]==input[i]){
+			if(loadAllItems[j][barcode]==inputs[i]){
 				numOfItems[j]++;
 				sum+=loadAllItems[j][price];
 			}
